@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ESD</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="utf-8">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+<body>
+<header>
+  <h1>צרו קשר</h1>
+</header>
+<nav>
+  <ul>
+    <li><a href="index.html">בית</a></li>
+    <li><a href="About.html">קצת עלינו</a></li>
+    <li><a href="Contact.html">צור קשר</a></li>
+  </ul>
+</nav>
+<main>
+  <!-- The form element represents a form that the user can fill out and submit -->
+  <form action="/submit-form" method="post">
+    <!-- The input elements allow the user to enter their name, email address, and message -->
+    <div>
+      <label for="name">שם פרטי או שם איש קשר בחברה:</label>
+      <input type="text" id="name" name="name">
+    </div>
+    <div>
+      <label for="email">דוא"ל:</label>
+      <input type="email" id="email" name="email">
+    </div>
+    <div>
+      <label for="message">תוכן:</label>
+      <textarea id="message" name="message" rows="5" cols="30"></textarea>
+    </div>
+    <!-- The submit button allows the user to submit the form -->
+    <div>
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</main>
+<footer>
+  <p>Copyright [Your Name] [Current Year]</p>
+</footer>
+</body>
+</html>
