@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
-  // Select the navigation menu
-  var navMenu = document.querySelector("nav");
+  // Select the navigation menu and the menu-toggle button
+  const navMenu = document.querySelector("nav");
+  const toggleButton = document.getElementById('menu-toggle');
+  const sideMenu = document.querySelector('aside');
 
-  // Add a click event listener to the menu button
-  navMenu.querySelector(".menu-button").addEventListener("click", function() {
-    // Toggle the "menu-open" class on the nav menu
-    navMenu.classList.toggle("menu-open");
+  toggleButton.addEventListener('click', () => {
+    sideMenu.classList.toggle('open');
   });
 });
