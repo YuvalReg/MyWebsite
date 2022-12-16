@@ -25,10 +25,8 @@ nav {
 
 nav ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
+  margin-top: 100px;
+  text-align: right;
 }
 
 nav ul li a {
@@ -101,7 +99,7 @@ footer p {
 aside {
   position: absolute;
   top: 0;
-  left: -300px;
+  right: -300px;
   width: 300px;
   height: 100%;
   background-color: #333;
@@ -110,7 +108,7 @@ aside {
 }
 
 aside.open {
-  left: 0;
+  right: 0;
 }
 
 #menu-toggle {
@@ -136,6 +134,8 @@ aside ul li a {
 aside ul li a:hover {
   background-color: #444;
 }
+
+
 
 
 
