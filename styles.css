@@ -145,6 +145,35 @@ aside ul li a {
   display: block; /* show the menu when the button is clicked */
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: none; /* remove the background image on small screens */
+  }
+
+  header h1 {
+    font-size: 24px; /* reduce the font size of the header on small screens */
+  }
+
+  nav ul {
+    display: none; /* hide the navigation on small screens */
+  }
+
+  nav button {
+    display: block; /* show the menu toggle button on small screens */
+  }
+
+  main {
+    width: 100%; /* make the main content take up the full width of the screen on small screens */
+  }
+
+  aside {
+    position: static; /* change the position of the aside element on small screens */
+    width: 100%; /* make the aside element take up the full width of the screen on small screens */
+    height: auto; /* let the aside element's height adjust based on its content on small screens */
+  }
+}
+
+
 
 
 
