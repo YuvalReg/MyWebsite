@@ -196,6 +196,12 @@ aside ul li a {
   footer p {
     font-size: 12px;
   }
+    /* fill the screen and add padding on small screens */
+  @media (min-width: 100vw) and (min-height: 100vh) {
+    body {
+      padding: 20px;
+    }
+  }
 }
 
 /* Medium screens (481px to 768px) */
@@ -234,6 +240,12 @@ aside ul li a {
   footer p {
     font-size: 12px;
   }
+    /* fill the screen and add padding on medium screens */
+  @media (min-width: 100vw) and (min-height: 100vh) {
+    body {
+      padding: 20px;
+    }
+  }
 }
 
 /* Large screens (769px and up) */
@@ -271,6 +283,12 @@ aside ul li a {
   /* increase the font size of the footer on large screens */
   footer p {
     font-size: 18px;
+  }
+    /* fill the screen and add padding on large screens */
+  @media (min-width: 100vw) and (min-height: 100vh) {
+    body {
+      padding: 20px;
+    }
   }
 }
 
