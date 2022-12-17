@@ -69,6 +69,7 @@ main p {
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 #customers {
@@ -145,33 +146,137 @@ aside ul li a {
   display: block; /* show the menu when the button is clicked */
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    background-image: none; /* remove the background image on small screens */
-  }
-
-  header h1 {
-    font-size: 24px; /* reduce the font size of the header on small screens */
-  }
-
+/* Small screens (up to 480px) */
+@media only screen and (max-width: 480px) {
+  /* hide the menu on small screens */
   nav ul {
-    display: none; /* hide the navigation on small screens */
+    display: none;
   }
 
+  /* show the menu toggle button on small screens */
   nav button {
-    display: block; /* show the menu toggle button on small screens */
+    display: block;
   }
 
-  main {
-    width: 100%; /* make the main content take up the full width of the screen on small screens */
-  }
-
+  /* hide the side menu on small screens */
   aside {
-    position: static; /* change the position of the aside element on small screens */
-    width: 100%; /* make the aside element take up the full width of the screen on small screens */
-    height: auto; /* let the aside element's height adjust based on its content on small screens */
+    right: -300px;
+  }
+
+  /* reduce the font size of the header on small screens */
+  header h1 {
+    font-size: 24px;
+  }
+
+  /* reduce the font size of the menu on small screens */
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  /* reduce the font size of the main content on small screens */
+  main h2 {
+    font-size: 20px;
+  }
+
+  main p {
+    font-size: 16px;
+  }
+
+  /* reduce the font size of the customer logos section on small screens */
+  #customers h2 {
+    font-size: 16px;
+  }
+
+  /* reduce the size of the customer logos on small screens */
+  .customer-logos img {
+    width: 80px;
+    height: 80px;
+  }
+
+  /* reduce the font size of the footer on small screens */
+  footer p {
+    font-size: 12px;
   }
 }
+
+/* Medium screens (481px to 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  /* reduce the font size of the header on medium screens */
+  header h1 {
+    font-size: 24px;
+  }
+
+  /* reduce the font size of the menu on medium screens */
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  /* reduce the font size of the main content on medium screens */
+  main h2 {
+    font-size: 20px;
+  }
+
+  main p {
+    font-size: 16px;
+  }
+
+  /* reduce the font size of the customer logos section on medium screens */
+  #customers h2 {
+    font-size: 16px;
+  }
+
+  /* reduce the size of the customer logos on medium screens */
+  .customer-logos img {
+    width: 80px;
+    height: 80px;
+  }
+
+  /* reduce the font size of the footer on medium screens */
+  footer p {
+    font-size: 12px;
+  }
+}
+
+/* Large screens (769px and up) */
+@media only screen and (min-width: 769px) {
+  /* increase the font size of the header on large screens */
+  header h1 {
+    font-size: 48px;
+  }
+
+  /* increase the font size of the menu on large screens */
+  nav ul li a {
+    font-size: 24px;
+  }
+
+  /* increase the font size of the main content on large screens */
+  main h2 {
+    font-size: 36px;
+  }
+
+  main p {
+    font-size: 24px;
+  }
+
+  /* increase the font size of the customer logos section on large screens */
+  #customers h2 {
+    font-size: 24px;
+  }
+
+  /* increase the size of the customer logos on large screens */
+  .customer-logos img {
+    width: 120px;
+    height: 120px;
+  }
+
+  /* increase the font size of the footer on large screens */
+  footer p {
+    font-size: 18px;
+  }
+}
+
+
+
 
 
 
